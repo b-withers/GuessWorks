@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*background-image: url("../../assets/images/tree.gif");*/
+	background-size: 100%;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+
+
+h5 {
+	margin: 5px 0;
+}
+
+
+#title {
+	margin: 10px 0;
+}
+
+.greeting {
+	margin-top: 10px;
+}
+
+.jumbotron{
+	padding: 10px;
+	margin-bottom: 10px;
+	height: 220px;
+}
+
+.buttons-wrap {
+	margin: 75px 0;
+}
+
+.letter-button {
+	padding: 10px 10px;
+}
+
+#wrong-letters {
+	font-size: large;
+}
+
+#blank-word {
+	font-size: large;
+}
+
+#play {
+	font-size: x-large;
+}
+
+.answer {
+	font-size: large;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	bottom: 0;
+	left: 0;
+	background-color: #c8c8c8;
+}
+
+@media (max-width: 768px) {
+	body {
+		/*background-image: url("../../assets/images/tree.gif") no-repeat center center fixed;*/
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		/*background-image: url("../../assets/images/tree.gif") no-repeat center center fixed;*/ 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+	.jumbotron {
+		padding: 15px!important;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+		/*background-image: url("../../assets/images/tree.gif") no-repeat center center fixed;*/ 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		/*background-image: url("../../assets/images/tree.gif") no-repeat center center fixed;*/ 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+}	
