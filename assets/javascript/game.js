@@ -1,5 +1,5 @@
 
-var words = ["fox"];
+var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster"];
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var count = 10;
 var answer = "";
@@ -8,7 +8,7 @@ var answer = "";
 // var losses =" ";
 
 
-var random_images_array = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif"];
+var random_images_array = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif", "9.gif", "10.gif", "11.gif", "12.gif", "13.gif"];
 
 function getRandomImage(imgAr, path) {
   path = path || 'assets/images/'; 
