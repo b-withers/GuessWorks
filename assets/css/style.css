@@ -3,26 +3,18 @@ body {
 	padding: 0;
 	/*background-image: url("../../assets/images/tree.gif");*/
 	background-size: 100%;
+	font-family: 'Macondo', cursive;
+}
+
+#main{
+	font-size: 24px;
+	font-weight: bold;
 }
 
 hr {
 	margin: 10px 0;
 }
 
-
-
-h5 {
-	margin: 5px 0;
-}
-
-
-#title {
-	margin: 10px 0;
-}
-
-.greeting {
-	margin-top: 10px;
-}
 
 .jumbotron{
 	padding: 10px;
@@ -31,11 +23,18 @@ h5 {
 }
 
 .buttons-wrap {
-	margin: 75px 0;
+	margin: 10px 0;
 }
 
 .letter-button {
-	padding: 10px 10px;
+	padding: 10px 15px;
+}
+
+.letter-button-color{
+	color: rgb(255, 255, 255);
+	background-color: black;
+	border-radius: 25px;
+	font-size: 14px;
 }
 
 #wrong-letters {

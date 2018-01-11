@@ -4,16 +4,16 @@ var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
 var count = 10;
 var answer = "";
 
-var wins = " ";
-var losses =" ";
+// var wins = " ";
+// var losses =" ";
 
 $(document).ready(function() {
 $("#count").text(count);
 chooseWord();
 createLetterButtons();
 
-$("#wins-span").text(localStorage.getItem("wins"));
-$("#lose-span").text(localStorage.getItem("losses"));
+// $("#wins-span").text(localStorage.getItem("wins"));
+// $("#lose-span").text(localStorage.getItem("losses"));
 });
 
 
@@ -40,10 +40,10 @@ function createLetterButtons() {
 
           
         if($("#blank-word").children().text().indexOf("_ ") == -1){
-          wins ++;
+          //wins ++;
           $("#buttons").remove();
-          $("#title").text("Guessed Correct, You have.");
-          $("#play").append("<br><button onclick='reloadPage()'>Play Again!</button>");
+          $("#title").text("That is Correct");
+          $("#play").append("<br><button onclick='reloadPage()'>Play Again?</button>");
           }
           
       	}else{
@@ -54,22 +54,22 @@ function createLetterButtons() {
           $("#count").text(count);
           
 	        if(count==0){
-            losses ++;
+            //losses ++;
             $("#blank-word").replaceWith('<div class="answer">' + answer + '</div');
 	        	$("#buttons").remove();
-	        	$("#title").text("Out of guesses you are.");
-	        	$("#play").append("<br><button onclick='reloadPage()'>Play Again!</button>");
+	        	$("#title").text("You are out of Guesses");
+	        	$("#play").append("<br><button onclick='reloadPage()'>Play Again?</button>");
 	        }
 	      	$(this).remove(); //Removes letters choices leftover
       	}
-                    var temp = document.getElementById("wins-span");
-                    temp.textContent = wins;
+                    // var temp = document.getElementById("wins-span");
+                    // temp.textContent = wins;
 
-                    var temp = document.getElementById("lose-span");
-                    temp.textContent = losses;
+                    // var temp = document.getElementById("lose-span");
+                    // temp.textContent = losses;
 
-                    localStorage.setItem("wins", wins);
-                    localStorage.setItem("losses", losses);
+                    // localStorage.setItem("wins", wins);
+                    // localStorage.setItem("losses", losses);
       	
 	})
 };
