@@ -15,6 +15,15 @@ hr {
 	margin: 10px 0;
 }
 
+#gif{
+	float: right;
+	position: relative;
+	bottom: 200px;
+	right: 50px;
+	clear: both;
+
+}
+
 
 .jumbotron{
 	padding: 10px;

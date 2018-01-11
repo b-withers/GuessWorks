@@ -7,6 +7,17 @@ var answer = "";
 // var wins = " ";
 // var losses =" ";
 
+
+var random_images_array = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif"];
+
+function getRandomImage(imgAr, path) {
+  path = path || 'assets/images/'; 
+  var num = Math.floor( Math.random() * imgAr.length );
+  var img = imgAr[ num ];
+  var imgStr = '<img src="' + path + img + '" alt = "">';
+  document.write(imgStr); document.close();
+}
+
 $(document).ready(function() {
 $("#count").text(count);
 chooseWord();
