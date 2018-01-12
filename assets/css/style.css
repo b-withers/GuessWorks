@@ -1,6 +1,6 @@
 body {
 	/*background-image: url("cork.png");*/
-	font-family: 'Macondo', cursive;
+	font-family: 'ABeeZee', sans-serif;
 }
 
 #main{
@@ -12,13 +12,23 @@ hr {
 	margin: 10px 0;
 }
 
-
-
-
-.jumbotron{
-	margin-top: 5px;
-	height: 200px;
+.animals{
+	position: relative;
+	bottom: 20px;
 }
+
+.jumbotron {
+    position: relative;
+    background:url("gear1.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 210px;
+	margin-bottom: 5px;
+	border-bottom: #313131;
+}
+
+
 
 .buttons-wrap {
 	margin: 10px 0;
