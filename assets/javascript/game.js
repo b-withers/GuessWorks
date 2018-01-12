@@ -1,25 +1,26 @@
 
 var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster", "polarbear", "pig", "giraffe", "alligator", "moose", "chimpanzee", "goose", "donkey", "mouse", "jellyfish", "kangaroo", "owl", "penguin", "rhinoceros", "sheep", "skunk", "sloth", "bunny", "turkey", "zebra", "yak", "Caterpillar","crocodile", "dove", "eagle", "falcon", "frog", "gorila", "Hedgehog", "Hummingbird", "Koala", "Leopard", "seal", "Otter", "porcupine", "ram", "rat", "squirrel", "gazelle", "antelope", "camel", "Hippopotamus", "llama"];
 
+
+var random_images_array = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif", "9.gif", "10.gif", "11.gif", "12.gif", "13.gif", "14.gif", "15.gif", "16.gif", "17.gif", "18.gif", "19.gif", "20.gif", "21.gif", "22.gif", "23.gif", "24.gif", "25.gif", "26.gif", "27.gif", "28.gif", "29.gif", "30.gif", "32.gif", "33.gif", "34.gif", "35.gif", "36.gif", "37.gif", "38.gif", "39.gif", "40.gif", "41.gif", "42.gif", "43.gif", "44.gif", "45.gif", "46.gif", "47.gif", "48.gif"];
+
+
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 
 var count = 10;
 var answer = "";
 
+
 var audioElement = document.createElement("audio");
 audioElement.setAttribute("src", "assets/push.mp3");
 
-      var winnerElement = document.createElement("audio");
-      winnerElement.setAttribute("src", "assets/cheer.wav");
+var winnerElement = document.createElement("audio");
+ winnerElement.setAttribute("src", "assets/cheer.wav");
 
-      var LoserElement = document.createElement("audio");
-      LoserElement.setAttribute("src", "assets/oops.wav");
+var LoserElement = document.createElement("audio");
+LoserElement.setAttribute("src", "assets/oops.wav");
 
-// var wins = " ";
-// var losses =" ";
-
-
-var random_images_array = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif", "9.gif", "10.gif", "11.gif", "12.gif", "13.gif", "14.gif", "15.gif", "16.gif", "17.gif", "18.gif", "19.gif", "20.gif", "21.gif", "22.gif", "23.gif", "24.gif", "25.gif", "26.gif", "27.gif", "28.gif", "29.gif", "30.gif", "32.gif", "33.gif", "34.gif", "35.gif", "36.gif", "37.gif", "38.gif", "39.gif", "40.gif", "41.gif", "42.gif", "43.gif", "44.gif", "45.gif", "46.gif", "47.gif", "48.gif"];
 
 function getRandomImage(imgAr, path) {
   path = path || 'assets/images/'; 
@@ -34,12 +35,24 @@ $("#count").text(count);
 chooseWord();
 createLetterButtons();
 
+//win / loss logic
 // $("#wins-span").text(localStorage.getItem("wins"));
 // $("#lose-span").text(localStorage.getItem("losses"));
+
+// var temp = document.getElementById("wins-span");
+// temp.textContent = wins;
+
+// var temp = document.getElementById("lose-span");
+// temp.textContent = losses;
+
+// localStorage.setItem("wins", wins);
+// localStorage.setItem("losses", losses);
+
+// var wins = " ";
+// var losses =" ";
+
 });
 
-
-//Create letter buttons
 function createLetterButtons() {
 
       for (var i=0; i<letters.length; i++) {
@@ -65,7 +78,6 @@ function createLetterButtons() {
 
           
         if($("#blank-word").children().text().indexOf("_ ") == -1){
-          //wins ++;
           winnerElement.play();
           $("#buttons").remove();
           $("#title").text("That is Correct");
@@ -81,7 +93,6 @@ function createLetterButtons() {
           
 	        if(count==0){
             LoserElement.play();
-            //losses ++;
             $("#blank-word").replaceWith('<div class="answer">' + answer + '</div');
 	        	$("#buttons").remove();
 	        	$("#title").text("You are out of Guesses");
@@ -89,15 +100,7 @@ function createLetterButtons() {
 	        }
 	      	$(this).remove(); //Removes letters choices leftover
       	}
-                    // var temp = document.getElementById("wins-span");
-                    // temp.textContent = wins;
-
-                    // var temp = document.getElementById("lose-span");
-                    // temp.textContent = losses;
-
-                    // localStorage.setItem("wins", wins);
-                    // localStorage.setItem("losses", losses);
-      	
+                        	
 	})
 };
 
