@@ -7,13 +7,13 @@ var count = 10;
 var answer = "";
 
 var audioElement = document.createElement("audio");
-      audioElement.setAttribute("src", "assets/push.mp3");
+audioElement.setAttribute("src", "assets/push.mp3");
 
-      // var winnerElement = document.createElement("audio");
-      // winnerElement.setAttribute("src", "assets/winner.mp3");
+      var winnerElement = document.createElement("audio");
+      winnerElement.setAttribute("src", "assets/cheer.wav");
 
-      // var LoserElement = document.createElement("audio");
-      // LoserElement.setAttribute("src", "assets/laugh.mp3");
+      var LoserElement = document.createElement("audio");
+      LoserElement.setAttribute("src", "assets/oops.wav");
 
 // var wins = " ";
 // var losses =" ";
@@ -66,7 +66,7 @@ function createLetterButtons() {
           
         if($("#blank-word").children().text().indexOf("_ ") == -1){
           //wins ++;
-          //winnerElement.play();
+          winnerElement.play();
           $("#buttons").remove();
           $("#title").text("That is Correct");
           $("#play").append("<br><button onclick='reloadPage()'>Play Again?</button>");
@@ -80,7 +80,7 @@ function createLetterButtons() {
           $("#count").text(count);
           
 	        if(count==0){
-            //LoserElement.play();
+            LoserElement.play();
             //losses ++;
             $("#blank-word").replaceWith('<div class="answer">' + answer + '</div');
 	        	$("#buttons").remove();
