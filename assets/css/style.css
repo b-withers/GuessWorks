@@ -1,6 +1,6 @@
 body {
 	/*background-image: url("cork.png");*/
-	font-family: 'ABeeZee', sans-serif;
+	font-family: 'Boogaloo', cursive;
 }
 
 #main{
@@ -17,18 +17,25 @@ hr {
 	bottom: 20px;
 }
 
+#gamemain{
+	font-size: 28px;
+}
+
 .jumbotron {
     position: relative;
     background:url("gear1.gif");
 	background-position: right;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	height: 210px;
+	height: 220px;
 	margin-bottom: 5px;
 	border-bottom: #313131;
 }
 
-
+#play{
+	position: relative;
+	bottom: 25px;
+}
 
 .buttons-wrap {
 	margin: 10px 0;
