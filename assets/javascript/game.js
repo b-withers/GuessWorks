@@ -1,10 +1,13 @@
 
-var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster", "polarbear", "pig", "giraffe", "alligator", "moose", "chimpanzee", "goose", "donkey", "mouse", "jellyfish", "kangaroo", "owl", "penguin", "rhinoceros", "sheep", "skunk", "sloth", "bunny", "turkey", "zebra", "yak", "Caterpillar","crocodile", "dove", "eagle", "falcon", "frog", "gorila", "Hedgehog", "Hummingbird", "Koala", "Leopard", "seal", "Otter", "porcupine", "ram", "rat", "squirrel"];
+var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster", "polarbear", "pig", "giraffe", "alligator", "moose", "chimpanzee", "goose", "donkey", "mouse", "jellyfish", "kangaroo", "owl", "penguin", "rhinoceros", "sheep", "skunk", "sloth", "bunny", "turkey", "zebra", "yak", "Caterpillar","crocodile", "dove", "eagle", "falcon", "frog", "gorila", "Hedgehog", "Hummingbird", "Koala", "Leopard", "seal", "Otter", "porcupine", "ram", "rat", "squirrel", "gazelle"];
 
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 var count = 10;
 var answer = "";
+
+var audioElement = document.createElement("audio");
+      audioElement.setAttribute("src", "assets/push.mp3");
 
 // var wins = " ";
 // var losses =" ";
@@ -44,6 +47,9 @@ function createLetterButtons() {
 
       //Add click event to the letter buttons
       $(".letter-button").on("click", function(){
+
+        audioElement.play();
+
       	if($("*#hidden-letter-" + $(this).attr("data-letter")).length !== 0){ 
           console.log($("*#hidden-letter-" + $(this).attr("data-letter")).length)
           //Change _ to matched data letter value
