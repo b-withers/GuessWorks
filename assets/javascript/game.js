@@ -1,5 +1,5 @@
 
-var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster", "polarbear", "pig", "giraffe", "alligator", "moose", "chimpanzee", "goose", "donkey", "mouse", "jellyfish", "kangaroo", "owl", "penguin", "rhinoceros", "sheep", "skunk", "sloth", "bunny", "turkey"];
+var words = ["fox", "racoon", "bear", "elephant", "puppy", "rabbit", "deer", "whale", "dolphin", "chicken", "monkey", "beaver", "horse", "kitten", "buffalo", "cheetah", "flamingo", "panda", "hamster", "polarbear", "pig", "giraffe", "alligator", "moose", "chimpanzee", "goose", "donkey", "mouse", "jellyfish", "kangaroo", "owl", "penguin", "rhinoceros", "sheep", "skunk", "sloth", "bunny", "turkey", "zebra", "yak"];
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var count = 10;
 var answer = "";
